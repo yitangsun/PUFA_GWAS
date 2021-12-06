@@ -1,0 +1,46 @@
+##   "PUFA","Omega_3","Omega_6","LA","DHA"
+
+#THIS SCRIPT EXECUTES AN ANALYSIS OF EIGHT STUDIES
+#THE RESULTS FOR EACH STUDY ARE STORED IN FILES Inputfile1.txt THROUGH Inputfile8.txt
+
+#LOAD THE FIRST EIGHT INPUT FILES
+
+# UNCOMMENT THE NEXT LINE TO ENABLE GenomicControl CORRECTION
+# GENOMICCONTROL ON
+
+# === DESCRIBE AND PROCESS THE FIRST INPUT FILE ===
+MARKER SNP
+ALLELE NonRefAllele RefAllele
+EFFECT BETA
+#PVALUE PVALUE
+#WEIGHT NS
+SCHEME STDERR
+STDERR SEBETA
+######CHANGE!
+PROCESS /scratch/ys98038/UKB/plink2_format/PUFA_GWAS/Summary_statistics/Locke_LA.txt
+
+# === DESCRIBE AND PROCESS THE FOURTH INPUT FILE ===
+MARKER ID
+ALLELE EA NEA
+EFFECT beta
+#PVALUE p_value
+#WEIGHT n_samples
+#SCHEME STDERR
+STDERR se
+######CHANGE!
+
+PROCESS /scratch/ys98038/UKB/plink2_format/PUFA_GWAS/Summary_statistics/MAGNETIC_LA.txt
+
+# === CARRY OUT AN INTERIM ANALYSIS OF THE FIRST FOUR FILES ===
+OUTFILE /scratch/ys98038/UKB/plink2_format/PUFA_GWAS/Summary_statistics/META_IVW_LA .txt
+ANALYZE
+
+
+# #for the final meta-analysis of all 8 samples only output results if the
+# #combined weight is greater than 10000 people
+#
+# OUTFILE METAANALYSIS_inputfile1-8_ .tbl
+# MINWEIGHT 10000
+# ANALYZE
+
+QUIT
