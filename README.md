@@ -5,27 +5,27 @@
 ### 2016, Nature Communications      27005778        Johannes Kettunen     serum/plasma NMR; total omega 3; total omega 6; DHA; LA; Other PUFAs than 18:2;  https://www.ebi.ac.uk/gwas/studies/GCST003664
 1. total omega 3 OmegaL3,fatty,acids\
 wget http://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST003001-GCST004000/GCST003664/Summary_statistics_MAGNETIC_FAw3.txt.gz
-2. total omega 6 OmegaL6,fatty,acids
+2. total omega 6 OmegaL6,fatty,acids\
 wget http://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST003001-GCST004000/GCST003664/Summary_statistics_MAGNETIC_FAw6.txt.gz
-3. MUFA MonoLunsaturated,fatty,acids
+3. MUFA MonoLunsaturated,fatty,acids\
 wget http://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST003001-GCST004000/GCST003664/Summary_statistics_MAGNETIC_MUFA.txt.gz
-4. DHA 22:6,,docosahexaenoic,acid,(DHA)
+4. DHA 22:6,,docosahexaenoic,acid,(DHA)\
 wget http://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST003001-GCST004000/GCST003664/Summary_statistics_MAGNETIC_DHA.txt.gz
-5. LA 18:2,,linoleic,acid,(LA)
+5. LA 18:2,,linoleic,acid,(LA)\
 wget http://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST003001-GCST004000/GCST003664/Summary_statistics_MAGNETIC_LA.txt.gz
  
 ### 2019, Nature          31367044        Adam E Locke  serum NMR; DHA; total omega 3; total omega 6; LA; total PUFA; (mmol/L)  https://www.ebi.ac.uk/gwas/studies/GCST008673
-1. total PUFA
+1. total PUFA\
 wget http://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST008001-GCST009000/GCST008673/LockeAE_prePMID_PUFA_sex-combined.gz
-2. total omega 3
+2. total omega 3\
 wget http://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST008001-GCST009000/GCST008673/LockeAE_prePMID_FAw3_sex-combined.gz
-3. total omega 6
+3. total omega 6\
 wget http://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST008001-GCST009000/GCST008673/LockeAE_prePMID_FAw6_sex-combined.gz
-4. Total Mono-unsatruated Fatty Acids (mmol/l)
+4. Total Mono-unsatruated Fatty Acids (mmol/l)\
 wget http://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST008001-GCST009000/GCST008673/LockeAE_prePMID_MUFA_sex-combined.gz
-5. DHA
+5. DHA\
 wget http://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST008001-GCST009000/GCST008673/LockeAE_prePMID_DHA_sex-combined.gz
-6. LA
+6. LA\
 wget http://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST008001-GCST009000/GCST008673/LockeAE_prePMID_LA_sex-combined.gz
 
 ## Use R to prepare files for further analysis
