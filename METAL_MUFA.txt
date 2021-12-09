@@ -12,10 +12,13 @@
 MARKER SNP
 ALLELE NonRefAllele RefAllele
 EFFECT BETA
-#PVALUE PVALUE
+#PVALUE PVALUE 
 #WEIGHT NS
 SCHEME STDERR
 STDERR SEBETA
+FREQLABEL MAF
+AVERAGEFREQ ON
+MINMAXFREQ ON
 ######CHANGE!
 PROCESS /scratch/ys98038/UKB/plink2_format/PUFA_GWAS/Summary_statistics/Locke_MUFA.txt
 
@@ -23,24 +26,28 @@ PROCESS /scratch/ys98038/UKB/plink2_format/PUFA_GWAS/Summary_statistics/Locke_MU
 MARKER ID
 ALLELE EA NEA
 EFFECT beta
+FREQLABEL eaf
+#AVERAGEFREQ ON
+#MINMAXFREQ ON
 #PVALUE p_value
 #WEIGHT n_samples
 #SCHEME STDERR
 STDERR se
 ######CHANGE!
-
 PROCESS /scratch/ys98038/UKB/plink2_format/PUFA_GWAS/Summary_statistics/MAGNETIC_MUFA.txt
 
 # === CARRY OUT AN INTERIM ANALYSIS OF THE FIRST FOUR FILES ===
 OUTFILE /scratch/ys98038/UKB/plink2_format/PUFA_GWAS/Summary_statistics/META_IVW_MUFA .txt
-ANALYZE
+ANALYZE 
 
 
 # #for the final meta-analysis of all 8 samples only output results if the
 # #combined weight is greater than 10000 people
-#
+# 
 # OUTFILE METAANALYSIS_inputfile1-8_ .tbl
 # MINWEIGHT 10000
-# ANALYZE
+# ANALYZE 
 
 QUIT
+
+
