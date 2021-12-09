@@ -3,7 +3,7 @@
 ## Download files 
 
 ### 2016, Nature Communications      27005778        Johannes Kettunen     serum/plasma NMR; total omega 3; total omega 6; DHA; LA; Other PUFAs than 18:2;  https://www.ebi.ac.uk/gwas/studies/GCST003664
-1. total omega 3 OmegaL3,fatty,acids
+1. total omega 3 OmegaL3,fatty,acids\
 wget http://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST003001-GCST004000/GCST003664/Summary_statistics_MAGNETIC_FAw3.txt.gz
 2. total omega 6 OmegaL6,fatty,acids
 wget http://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST003001-GCST004000/GCST003664/Summary_statistics_MAGNETIC_FAw6.txt.gz
