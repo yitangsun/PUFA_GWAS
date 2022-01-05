@@ -44,3 +44,13 @@ You only need to change the pathway.
 
 ## Use Plink to identify lead SNPs
 Plink_lead_SNPs.sh
+
+## Apply omega-3 GWAS using mixed linear model association (MLMA) in the AFR population 
+Please change the file names in MLMA.sh and multi_grm.txt. And run MLMA.sh
+
+1. Estimate the GRMs from the SNPs on each chromosome.
+2. Merge them by the commands --mgrm and --make-grm.
+3. Use the genome-wide GRMs to apply MLMA on each chromosome.
+
+Please note that you have to change the pathway.
+
